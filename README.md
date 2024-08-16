@@ -1,4 +1,4 @@
-# simpsonsApi
+# simpsonsApi ejemplo con kotlin
 Consumiendo la api de simpsons  https://thesimpsonsquoteapi.glitch.me/
 
 # Temas Android
