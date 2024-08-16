@@ -9,6 +9,9 @@ import javax.inject.Inject
 class ApiRepositories @Inject constructor(private val service: ApiServices) {
     suspend fun getSearchPeople(limit: Int, search: String): ApiResponseStatus<List<ApiModel>> =
         makeNetworkCall {
-            service.searchPeople(limit, search).map { it.toMapModel() }
+            service.searchPeople(limit, search).map {
+                it.id++
+                it.toMapModel()
+            }
         }
 }

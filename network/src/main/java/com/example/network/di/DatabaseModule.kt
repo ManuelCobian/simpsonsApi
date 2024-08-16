@@ -1,6 +1,9 @@
 package com.example.network.di
 
 import com.example.network.Constants
+import com.example.network.network.services.ApiServiceImp
+import com.example.network.network.services.ApiServices
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,6 +15,14 @@ import okio.Buffer
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
+
+@InstallIn(SingletonComponent::class)
+@Module
+abstract class HitModule {
+    @Singleton
+    @Binds
+    abstract fun bindHitService(imp: ApiServiceImp): ApiServices
+}
 
 @Module
 @InstallIn(SingletonComponent::class)

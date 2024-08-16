@@ -6,7 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiServices {
-
     @GET(Constants.PATH_INDEX)
     suspend fun searchPeople(
         @Query("count") limit: Int = 20,

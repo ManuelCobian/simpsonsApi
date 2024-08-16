@@ -3,6 +3,7 @@ package com.example.network.network.models
 import com.google.gson.annotations.SerializedName
 
 data class ApiResponse(
+    var id: Int,
     @SerializedName("quote") var quote: String,
     @SerializedName("character") var character: String,
     @SerializedName("image") var image: String,
