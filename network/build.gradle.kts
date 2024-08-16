@@ -80,8 +80,7 @@ dependencies {
     //CORRUTIENES
     implementation(libs.android.corrutienes)
 
-    //ADS
-    implementation(libs.android.ads)
+
 
     implementation(project(":base"))
 

@@ -80,8 +80,6 @@ dependencies {
     //CORRUTIENES
     implementation(libs.android.corrutienes)
 
-    //ADS
-    implementation(libs.android.ads)
 
 
     testImplementation(libs.junit)
