@@ -83,6 +83,7 @@ dependencies {
     //ADS
     implementation(libs.android.ads)
 
+    implementation(project(":base"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
